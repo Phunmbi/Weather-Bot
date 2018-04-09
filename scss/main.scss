@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	position: fixed;
+	height: 53px;
+	width: 100%;
+}
+
+.darktheme {
+	background-color: rgb(39, 71, 99);
+	padding: 7px;
+}
+
+.greentheme {
+	background-color: rgb(54, 156, 54);
+	padding: 7px;
+}
+
+.botavatar {
+	img {
+		border-radius: 100%;
+		height: 50px;
+		float: left;
+	}
+}
+
+.botdetails {
+	float: left;
+	h3,
+	p {
+		color: white;
+		height: 22px;
+		margin: 0px 0px 1px 6px;
+	}
+}
+
+.menu {
+	img {
+		padding-top: 4px;
+		float: right;
+		cursor: pointer;
+	}
+	.menucontent {
+		display: none;
+		position: absolute;
+		top: 40px;
+		right: 20px;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+		p {
+			color: black;
+			padding: 12px 16px;
+			display: block;
+			cursor: pointer;
+			&:hover {
+				background-color: #ddd;
+			}
+		}
+	}
+	.show {
+		display: block;
+	}
+}
+
+section {
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/bgpattern2.jpg");
+	background-size: cover;
+	padding-bottom: 60px;
+	padding-top: 53px;
+	.chats {
+		.messagediv {
+			width: 100%;
+			.chatmessage {
+				margin: 5px;
+				padding: 1px 9px 1px 9px;
+				border: 1px solid #bdbfb7;
+				background-color: #bdbfb7;
+				color: white;
+				float: right;
+				border-radius: 10px;
+				max-width: 45%;
+				width: auto;
+			}
+			.after-chatmessage {
+				clear: both;
+			}
+		}
+		.messagediv {
+			width: 100%;
+			.botmessage {
+				margin: 5px;
+				padding: 1px 9px 1px 9px;
+				border: 1px solid #c1d9d4;
+				background-color: #c1d9d4;
+				color: white;
+				float: left;
+				border-radius: 10px;
+				max-width: 45%;
+				width: auto;
+			}
+			.after-botmessage {
+				clear: both;
+			}
+		}
+	}
+}
+
+footer {
+	position: absolute;
+	.chatinput {
+		position: fixed;
+		bottom: 0;
+		background-color: #d3d3d3;
+		width: 100%;
+		height: 60px;
+		padding: 2px 0px 2px 2px;
+		input {
+			width: 88vw;
+			margin-left: 3px;
+			margin-top: 10px;
+			height: 40px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: whitesmoke;
+			&:focus {
+				border: 2px solid black; //				background-color: green;
+				border-style: none;
+			}
+			&[type=submit] {
+				background: url("../img/send32.png");
+				position: absolute;
+				margin-top: 15px;
+				margin-left: 5px;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}
