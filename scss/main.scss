@@ -16,7 +16,7 @@ header {
 }
 
 .darktheme {
-	background-color: rgb(39, 71, 99);
+	background-color: #274763;
 	padding: 7px;
 }
 
@@ -35,11 +35,14 @@ header {
 
 .botdetails {
 	float: left;
-	h3,
-	p {
+	h3,p {
 		color: white;
 		height: 22px;
-		margin: 0px 0px 1px 6px;
+		margin: 0px 0px 1px 8px;
+	}
+	p{
+		padding-top: 3px;
+		font-size: 11px;
 	}
 }
 
@@ -87,8 +90,8 @@ section {
 			.chatmessage {
 				margin: 5px;
 				padding: 1px 9px 1px 9px;
-				border: 1px solid #bdbfb7;
-				background-color: #bdbfb7;
+				border: 1px solid #686963;
+				background-color: #686963;
 				color: white;
 				float: right;
 				border-radius: 10px;
@@ -104,8 +107,8 @@ section {
 			.botmessage {
 				margin: 5px;
 				padding: 1px 9px 1px 9px;
-				border: 1px solid #c1d9d4;
-				background-color: #c1d9d4;
+				border: 1px solid #8AA29E;
+				background-color: #8AA29E;
 				color: white;
 				float: left;
 				border-radius: 10px;
@@ -124,29 +127,29 @@ footer {
 	.chatinput {
 		position: fixed;
 		bottom: 0;
-		background-color: #d3d3d3;
-		width: 100%;
+		background-color: #C0BCB5;
+		width: 104%;
 		height: 60px;
 		padding: 2px 0px 2px 2px;
+		display: inline-block;
+		text-align: center;
 		input {
-			width: 88vw;
-			margin-left: 3px;
-			margin-top: 10px;
+			width: 86vw;
 			height: 40px;
 			padding: 10px;
 			border: none;
 			border-radius: 5px;
-			background-color: whitesmoke;
+			background-color: #ECEBE4;
 			&:focus {
-				border: 2px solid black; //				background-color: green;
-				border-style: none;
+				outline-style: none;
 			}
 			&[type=submit] {
 				background: url("../img/send32.png");
-				position: absolute;
-				margin-top: 15px;
-				margin-left: 5px;
+				margin-top: 13px;
+				margin-left: 1px;
 				background-repeat: no-repeat;
+				width: 10vw;
+				padding-top: 1px;
 			}
 		}
 	}

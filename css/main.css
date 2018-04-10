@@ -27,11 +27,13 @@ header {
 
 .botdetails {
   float: left; }
-  .botdetails h3,
-  .botdetails p {
+  .botdetails h3, .botdetails p {
     color: white;
     height: 22px;
-    margin: 0px 0px 1px 6px; }
+    margin: 0px 0px 1px 8px; }
+  .botdetails p {
+    padding-top: 3px;
+    font-size: 11px; }
 
 .menu img {
   padding-top: 4px;
@@ -69,8 +71,8 @@ section {
     section .chats .messagediv .chatmessage {
       margin: 5px;
       padding: 1px 9px 1px 9px;
-      border: 1px solid #bdbfb7;
-      background-color: #bdbfb7;
+      border: 1px solid #686963;
+      background-color: #686963;
       color: white;
       float: right;
       border-radius: 10px;
@@ -83,8 +85,8 @@ section {
     section .chats .messagediv .botmessage {
       margin: 5px;
       padding: 1px 9px 1px 9px;
-      border: 1px solid #c1d9d4;
-      background-color: #c1d9d4;
+      border: 1px solid #8AA29E;
+      background-color: #8AA29E;
       color: white;
       float: left;
       border-radius: 10px;
@@ -98,27 +100,27 @@ footer {
   footer .chatinput {
     position: fixed;
     bottom: 0;
-    background-color: #d3d3d3;
-    width: 100%;
+    background-color: #C0BCB5;
+    width: 104%;
     height: 60px;
-    padding: 2px 0px 2px 2px; }
+    padding: 2px 0px 2px 2px;
+    display: inline-block;
+    text-align: center; }
     footer .chatinput input {
-      width: 88vw;
-      margin-left: 3px;
-      margin-top: 10px;
+      width: 86vw;
       height: 40px;
       padding: 10px;
       border: none;
       border-radius: 5px;
-      background-color: whitesmoke; }
+      background-color: #ECEBE4; }
       footer .chatinput input:focus {
-        border: 2px solid black;
-        border-style: none; }
+        outline-style: none; }
       footer .chatinput input[type=submit] {
         background: url("../img/send32.png");
-        position: absolute;
-        margin-top: 15px;
-        margin-left: 5px;
-        background-repeat: no-repeat; }
+        margin-top: 13px;
+        margin-left: 1px;
+        background-repeat: no-repeat;
+        width: 10vw;
+        padding-top: 1px; }
 
 /*# sourceMappingURL=main.css.map */
