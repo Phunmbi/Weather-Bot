@@ -41,6 +41,9 @@ chatSubmit.addEventListener("click", function (e) {
 		newUserMessageDivUser.appendChild(clearFloatDivUser);
 		chatSpace.appendChild(newUserMessageDivUser);
 
+		// Scroll the page to the bottom to see the latest messages
+		window.scrollBy(0, 2000);
+
 		// Now for the bot's response using a web worker
 		// first we need to filter throught the user's input and grab the city we are working with
 		// variable check to see if the variable is not empty. if it is. stop
@@ -71,6 +74,9 @@ chatSubmit.addEventListener("click", function (e) {
 					newUserMessageDivBot.appendChild(clearFloatDivBot);
 					chatSpace.appendChild(newUserMessageDivBot);
 
+					// Scroll the page to the bottom
+					window.scrollBy(0, 2000);
+
 					// Then we terminate the web worker and re initialize it as undefined.
 					web_worker.terminate();
 					web_worker = undefined;
@@ -88,6 +94,9 @@ chatSubmit.addEventListener("click", function (e) {
 					newUserMessageDivBot.appendChild(newSubDivBot);
 					newUserMessageDivBot.appendChild(clearFloatDivBot);
 					chatSpace.appendChild(newUserMessageDivBot);
+
+					// scroll the page to the bottom
+					window.scrollBy(0, 2000);
 
 					// Then we terminate the web worker and re initialize it as undefined.
 					web_worker.terminate();

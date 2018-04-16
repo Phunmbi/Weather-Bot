@@ -65,21 +65,19 @@ section {
   background-image: url("../img/bgpattern2.jpg");
   background-size: cover;
   padding-bottom: 60px;
-  padding-top: 53px; }
-  section .chats .messagediv {
-    width: 100%; }
-    section .chats .messagediv .chatmessage {
-      margin: 5px;
-      padding: 1px 9px 1px 9px;
-      border: 1px solid #686963;
-      background-color: #686963;
-      color: white;
-      float: right;
-      border-radius: 10px;
-      max-width: 45%;
-      width: auto; }
-    section .chats .messagediv .after-chatmessage {
-      clear: both; }
+  padding-top: 55px; }
+  section .chats .messagediv .chatmessage {
+    margin: 5px;
+    padding: 1px 9px 1px 9px;
+    border: 1px solid #686963;
+    background-color: #686963;
+    color: white;
+    float: right;
+    border-radius: 10px;
+    max-width: 45%;
+    width: auto; }
+  section .chats .messagediv .after-chatmessage {
+    clear: both; }
   section .chats .messagediv {
     width: 100%; }
     section .chats .messagediv .botmessage {
